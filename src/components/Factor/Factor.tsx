@@ -15,7 +15,7 @@ export default function Factor({loading, data}: Props) {
     return (
         <>
             {loading &&
-                <CircularProgress/>
+                <CircularProgress aria-label={"loading"}/>
             }
             {!loading &&
                 <Card>

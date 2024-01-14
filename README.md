@@ -12,7 +12,7 @@ versions for each:
 |                [MUI](https://mui.com)                | 5.15.4  | Intuitive React UI tools                                            |
 | [React Testing Library](https://testing-library.com) | 14.1.2  | React Testing Library                                               |
 |              [Jest](https://jestjs.io)               | 29.7.0  | JavaScript Testing Framework                                        |
-|        [Storybook](https://storybook.js.org)         |  x.x.x  | Frontend workshop for building UI components and pages in isolation |
+|        [Storybook](https://storybook.js.org)         |  7.6.8  | Frontend workshop for building UI components and pages in isolation |
 |          [Cypress](https://www.cypress.io)           |  x.x.x  | Test. Automate. Accelerate.                                         |
 
 ## Local Deployment
@@ -132,7 +132,19 @@ yarn test
 
 ### 6. Add Storybook
 
-_tbd_
+As explained in the [Storybook documentation](https://storybook.js.org/docs/builders/vite), _if you ran npx storybook@latest init to include Storybook in your Vite application, the builder is already installed and configured for you._
+
+```shell
+npx storybook@latest init
+```
+
+> The `npx` command installs additional files as example. Feel free to remove everything under [src/stories](src/stories) and create your own story for component `Categories` as in [Categories.stories.ts](src/stories/Categories.stories.ts).
+
+Run the Storybook using the following command:
+
+```shell
+yarn storybook
+```
 
 ### 6. Add Cypress
 

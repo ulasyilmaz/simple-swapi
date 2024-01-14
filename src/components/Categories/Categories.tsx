@@ -14,7 +14,7 @@ export default function Categories({loading, items, selectedItem, handleChange}:
         {loading &&
             <Grid container spacing={0}>
               <Grid item xs={1}>
-                <CircularProgress/>
+                <CircularProgress aria-label={"loading"}/>
               </Grid>
               <Grid item xs={11}>
                 <Alert severity="info">

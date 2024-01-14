@@ -146,7 +146,26 @@ Run the Storybook using the following command:
 yarn storybook
 ```
 
-### 6. Add Cypress
+### 7. Add Cypress
 
-_tbd_
+See [Installing Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress) for instructions:
+
+```shell
+yarn add --dev cypress
+```
+
+Once the dependency `cypress` is installed, add a new script `cypress` for running `cypress open` via which you can complete the configuration:
+
+```shell
+yarn cypress
+```
+
+> If you have problems with dependency resolution, you can clean the yarn cache, and reinstall all node_modules.
+> ```shell
+> yarn clean cache
+> rm -rf node_modules
+> rm yarn.lock
+> yarn
+> ```
+
 

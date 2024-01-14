@@ -132,13 +132,17 @@ yarn test
 
 ### 6. Add Storybook
 
-As explained in the [Storybook documentation](https://storybook.js.org/docs/builders/vite), _if you ran npx storybook@latest init to include Storybook in your Vite application, the builder is already installed and configured for you._
+As explained in the [Storybook documentation](https://storybook.js.org/docs/builders/vite), _if you ran npx
+storybook@latest init to include Storybook in your Vite application, the builder is already installed and configured for
+you._
 
 ```shell
 npx storybook@latest init
 ```
 
-> The `npx` command installs additional files as example. Feel free to remove everything under [src/stories](src/stories) and create your own story for component `Categories` as in [Categories.stories.ts](src/stories/Categories.stories.ts).
+> The `npx` command installs additional files as example. Feel free to remove everything
+> under [src/stories](src/stories) and create your own story for component `Categories` as
+> in [Categories.stories.ts](src/stories/Categories.stories.ts).
 
 Run the Storybook using the following command:
 
@@ -154,7 +158,8 @@ See [Installing Cypress](https://docs.cypress.io/guides/getting-started/installi
 yarn add --dev cypress
 ```
 
-Once the dependency `cypress` is installed, add a new script `cypress` for running `cypress open` via which you can complete the configuration:
+Once the dependency `cypress` is installed, add a new script `cypress` for running `cypress open` via which you can
+complete the configuration:
 
 ```shell
 yarn cypress

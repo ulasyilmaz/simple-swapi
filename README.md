@@ -13,7 +13,7 @@ versions for each:
 | [React Testing Library](https://testing-library.com) | 14.1.2  | React Testing Library                                               |
 |              [Jest](https://jestjs.io)               | 29.7.0  | JavaScript Testing Framework                                        |
 |        [Storybook](https://storybook.js.org)         |  7.6.8  | Frontend workshop for building UI components and pages in isolation |
-|          [Cypress](https://www.cypress.io)           |  x.x.x  | Test. Automate. Accelerate.                                         |
+|          [Cypress](https://www.cypress.io)           | 13.6.2  | Test. Automate. Accelerate.                                         |
 
 ## Local Deployment
 

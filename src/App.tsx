@@ -4,7 +4,13 @@ import {FALLBACK_CATEGORIES, FALLBACK_FACTORS} from "./shared/helpers";
 import Categories from "./components/Categories";
 import {Grid} from "@mui/material";
 import Factors from "./components/Factors";
+import Person from "./components/Person";
 import Factor from "./components/Factor";
+import Film from "./components/Film/Film.tsx";
+import Planet from "./components/Planet";
+import Species from "./components/Species";
+import Starship from "./components/Starship";
+import Vehicle from "./components/Vehicle";
 
 function App() {
   const BASE_URL = "https://swapi.dev/api/";
@@ -29,8 +35,6 @@ function App() {
 
   useEffect(() => {
     const fetchFactors = async () => {
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-expect-error
       const factorsUrl = categories[selectedCategory];
       setLoadingFactors(true);
       const {data: response} = await axios.get(factorsUrl);
@@ -39,7 +43,7 @@ function App() {
       setLoadingFactors(false);
     };
     fetchFactors();
-  }, [selectedCategory]);
+  }, [selectedCategory, categories]);
 
   const handleCategorySelected = (event: SyntheticEvent, category: string): void => {
     console.debug(event.type);
@@ -73,10 +77,48 @@ function App() {
         />
       </Grid>
       <Grid item xs={8}>
-        <Factor
-            loading={loadingFactors}
-            data={factors.results.find(factor => getFactorName(factor) === selectedFactor)}
-        />
+        {selectedCategory === "people" &&
+            <Person
+                loading={loadingFactors}
+                data={factors.results.find(factor => getFactorName(factor) === selectedFactor)}
+            />
+        }
+        {selectedCategory === "planets" &&
+            <Planet
+                loading={loadingFactors}
+                data={factors.results.find(factor => getFactorName(factor) === selectedFactor)}
+            />
+        }
+        {selectedCategory === "films" &&
+            <Film
+                loading={loadingFactors}
+                data={factors.results.find(factor => getFactorName(factor) === selectedFactor)}
+            />
+        }
+        {selectedCategory === "species" &&
+            <Species
+                loading={loadingFactors}
+                data={factors.results.find(factor => getFactorName(factor) === selectedFactor)}
+            />
+        }
+        {selectedCategory === "vehicles" &&
+            <Vehicle
+                loading={loadingFactors}
+                data={factors.results.find(factor => getFactorName(factor) === selectedFactor)}
+            />
+        }
+        {selectedCategory === "starships" &&
+            <Starship
+                loading={loadingFactors}
+                data={factors.results.find(factor => getFactorName(factor) === selectedFactor)}
+            />
+        }
+        {!Object.keys(FALLBACK_CATEGORIES).includes(selectedCategory) &&
+            <Factor
+                loading={loadingFactors}
+                data={factors.results.find(factor => getFactorName(factor) === selectedFactor)}
+            />
+        }
       </Grid>
     </Grid>
   </>;

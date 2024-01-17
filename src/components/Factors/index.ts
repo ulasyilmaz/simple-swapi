@@ -1,1 +1,1 @@
-export {default} from './Factors.tsx';
+export {default} from "./Factors.tsx";

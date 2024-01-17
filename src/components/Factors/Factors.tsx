@@ -25,7 +25,7 @@ export default function Factors({loading, items, selectedItem, handleClick}: Pro
   }
 
   return (
-      <Box sx={{width: '100%'}}>
+      <Box sx={{width: "100%"}}>
         {loading &&
             <Grid container spacing={0}>
               <Alert severity="info">

@@ -10,7 +10,7 @@ interface Props {
 
 export default function Categories({loading, items, selectedItem, handleChange}: Props) {
   return (
-      <Box sx={{width: '100%'}}>
+      <Box sx={{width: "100%"}}>
         {loading &&
             <Grid container spacing={0}>
               <Grid item xs={1}>

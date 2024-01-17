@@ -3,12 +3,12 @@ import type {Meta, StoryObj} from "@storybook/react";
 import Person from "../components/Person"
 
 const meta = {
-  title: 'Example/Person',
+  title: "Example/Person",
   component: Person,
   parameters: {
-    layout: 'centered',
+    layout: "centered",
   },
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   argTypes: {},
 } satisfies Meta<typeof Person>;
 

@@ -1,4 +1,4 @@
-export const FALLBACK_CATEGORIES = {
+export const FALLBACK_CATEGORIES: Record<string, string> = {
   "people": "https://swapi.dev/api/people/",
   "planets": "https://swapi.dev/api/planets/",
   "films": "https://swapi.dev/api/films/",

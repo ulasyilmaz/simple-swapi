@@ -1,14 +1,28 @@
 import ReactJson from "react-json-view";
 import {Card, CardContent, CircularProgress, Typography} from "@mui/material";
 
-interface Data {
-  name?: string;
-  title?: string;
+type Person = {
+  name: string;
+  height: string;
+  mass: string;
+  hair_color: string;
+  skin_color: string;
+  eye_color: string;
+  birth_year: string;
+  gender: string;
+  homeworld: string;
+  films: string[];
+  species: string[];
+  vehicles: string[];
+  starships: string[];
+  created: string;
+  edited: string;
+  url: string;
 }
 
 interface Props {
   loading: boolean
-  data?: Data;
+  data?: Person;
 }
 
 export default function Person({loading, data}: Props) {
@@ -21,7 +35,7 @@ export default function Person({loading, data}: Props) {
             <Card>
               <CardContent>
                 <Typography variant="h5" component="div" paddingBottom={3}>
-                  {data && (data.name || data.title)}
+                  {data && data.name}
                 </Typography>
                 <ReactJson src={JSON.parse(JSON.stringify(data))}/>
               </CardContent>

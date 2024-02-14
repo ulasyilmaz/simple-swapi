@@ -1,5 +1,15 @@
 import ReactJson from "react-json-view";
-import {Card, CardContent, CircularProgress, Typography} from "@mui/material";
+import {
+  Card,
+  CardContent,
+  CircularProgress,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText
+} from "@mui/material";
+import {BadgeOutlined, Height} from "@mui/icons-material";
 
 type Person = {
   name: string;
@@ -21,7 +31,7 @@ type Person = {
 }
 
 interface Props {
-  loading: boolean
+  loading: boolean;
   data?: Person;
 }
 
@@ -34,10 +44,41 @@ export default function Person({loading, data}: Props) {
         {!loading &&
             <Card>
               <CardContent>
-                <Typography variant="h5" component="div" paddingBottom={3}>
-                  {data && data.name}
-                </Typography>
-                <ReactJson src={JSON.parse(JSON.stringify(data))}/>
+                <List>
+                  <ListItem disablePadding>
+                    <ListItemButton>
+                      <ListItemIcon>
+                        <BadgeOutlined/>
+                      </ListItemIcon>
+                      <ListItemIcon>
+                        Name
+                      </ListItemIcon>
+                      <ListItemText primary={data && data.name}/>
+                    </ListItemButton>
+                  </ListItem>
+                  <ListItem disablePadding>
+                    <ListItemButton>
+                      <ListItemIcon>
+                        <Height/>
+                      </ListItemIcon>
+                      <ListItemIcon>
+                        Height
+                      </ListItemIcon>
+                      <ListItemText primary={`${data && data.height} cm`}/>
+                    </ListItemButton>
+                  </ListItem>
+                  <ListItem disablePadding alignItems={'flex-start'}>
+                    <ListItemButton>
+                      <ListItemIcon>
+                        <Height/>
+                      </ListItemIcon>
+                      <ListItemIcon>
+                        Height
+                      </ListItemIcon>
+                      <ReactJson src={JSON.parse(JSON.stringify(data))}/>
+                    </ListItemButton>
+                  </ListItem>
+                </List>
               </CardContent>
             </Card>
         }

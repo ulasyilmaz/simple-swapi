@@ -8,7 +8,7 @@ versions for each:
 |:----------------------------------------------------:|:-------:|:--------------------------------------------------------------------|
 |              [React](https://react.dev)              | 18.2.0  | Library for web and native user interfaces                          |
 |     [TypeScript](https://www.typescriptlang.org)     |  5.2.2  | JavaScript with syntax for types                                    |
-|           [Vite](https://vitejs.dev/guide)           |  5.0.8  | Next Generation Frontend Tooling                                    |
+|           [Vite](https://vitejs.dev/guide)           |  5.1.2  | Next Generation Frontend Tooling                                    |
 |                [MUI](https://mui.com)                | 5.15.4  | Intuitive React UI tools                                            |
 | [React Testing Library](https://testing-library.com) | 14.1.2  | React Testing Library                                               |
 |              [Jest](https://jestjs.io)               | 29.7.0  | JavaScript Testing Framework                                        |

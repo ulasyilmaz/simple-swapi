@@ -6,14 +6,14 @@ versions for each:
 
 |                         Tool                         | Version | Description                                                         |
 |:----------------------------------------------------:|:-------:|:--------------------------------------------------------------------|
-|              [React](https://react.dev)              | 18.2.0  | Library for web and native user interfaces                          |
-|     [TypeScript](https://www.typescriptlang.org)     |  5.4.5  | JavaScript with syntax for types                                    |
-|           [Vite](https://vitejs.dev/guide)           |  5.2.9  | Next Generation Frontend Tooling                                    |
-|                [MUI](https://mui.com)                | 5.15.15 | Intuitive React UI tools                                            |
-| [React Testing Library](https://testing-library.com) | 15.0.2  | React Testing Library                                               |
+|              [React](https://react.dev)              | 18.3.1  | Library for web and native user interfaces                          |
+|     [TypeScript](https://www.typescriptlang.org)     |  5.5.2  | JavaScript with syntax for types                                    |
+|           [Vite](https://vitejs.dev/guide)           |  5.3.1  | Next Generation Frontend Tooling                                    |
+|                [MUI](https://mui.com)                | 5.15.20 | Intuitive React UI tools                                            |
+| [React Testing Library](https://testing-library.com) | 16.0.0  | React Testing Library                                               |
 |              [Jest](https://jestjs.io)               | 29.7.0  | JavaScript Testing Framework                                        |
-|        [Storybook](https://storybook.js.org)         |  8.0.8  | Frontend workshop for building UI components and pages in isolation |
-|          [Cypress](https://www.cypress.io)           | 13.7.3  | Test. Automate. Accelerate.                                         |
+|        [Storybook](https://storybook.js.org)         | 8.1.10  | Frontend workshop for building UI components and pages in isolation |
+|          [Cypress](https://www.cypress.io)           | 13.12.0 | Test. Automate. Accelerate.                                         |
 
 ## Local Deployment
 
@@ -21,7 +21,7 @@ versions for each:
 
 #### node
 
-Install `node` version **20.12.2**.
+Install `node` version **20.15.0**.
 
 > Recommended is to use one of [nvm](https://github.com/nvm-sh/nvm) or [n](https://github.com/tj/n#installation) for
 > installing **node**. Verify the version by running
